@@ -1,0 +1,119 @@
+:root {
+    --bg-gradient: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+    --text-light: #e0e0e0;
+    --accent: #00f7ff;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --border-glow: #00f7ff;
+    --font: 'Fira Code', monospace;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background: var(--bg-gradient);
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+  
+  .container {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-glow);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #9beef9;
+  }
+  
+  h3 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.3rem;
+  }
+  
+  p {
+    color: #cfd8dc;
+    margin: 0.5rem 0;
+    text-align: justify;
+  }
+  
+  ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+    color: #a2e9f0;
+  }
+  
+  li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .btn-glow {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    background: none;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 10px var(--accent);
+  }
+  
+  .btn-glow:hover {
+    background: var(--accent);
+    color: #111;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--accent);
+  }
+  
+  .block {
+    background: var(--card-bg);
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--accent);
+  }
+  
+  .info {
+    margin-top: 2.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #aaa;
+  }
+  
+  .info a {
+    color: #00f7ff;
+    text-decoration: none;
+  }
+  
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+  }
+  
